@@ -25,6 +25,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 //for jade(html) files in the views folder
 //res.render Used in Express to view and send HTML to the client 
 
+app.get('/', function(req, res){
+	res.render('index', {title: 'This Page is All about DataBases'}) 
+}); 
+
+
+app.get('/chap1', function(req, res) {
+	res.render('chapter-1'); 
+});
 
 
 
