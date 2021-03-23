@@ -23,7 +23,7 @@ p | . Casual End Users &ndash;
 
 | Standalone users &ndash;
 | These are those users whose job is basically to maintain personal databases by using a ready-made program package that provides easy to use menu-based or graphics-based interfaces
-=======
+
 
 img(src='https://www.qcu.org/mstinc/sdp/help/en/images/help_my_accounts.png')
 p
@@ -38,6 +38,7 @@ ul
   li Personalized phonebook
   li Calculator
   li Real-time navaigation system Ngoc
+
 
 h2 1.5 Question (Marvin)
 
@@ -77,4 +78,31 @@ processing instead of a database approach.
 
 </ul>
 
+
+h1 Kevin McCall 1.9
+h2 What is the difference between controlled and uncontrolled redundancy?
+p
+  | Redundancy is when the same fact is stored multiple times in several places in a database
+ul
+  li
+    | For example, the name of a student with StudentID=3 is Red is stored multiple times.
+p
+  | Redundancy is controlled when the DBMS ensures that multiple copies of the same data is consistent.
+ul
+  li
+    | For example, if a new record with StudentID=3 is stored in the database, the DBMS will ensure that this record is for student Red.
+p If the DBMS has no control over this, we have uncontrolled redundancy.
+
+h2 Controlled Redundancy
+ul
+  li It is done in order to improve the performance of queries.
+  li
+    | Redundancy is said to be controlled redundancy, when storing the data at multiple times will ensure consistency of data.
+  li Data access or retrieval speed is high.
+h2 Uncontrolled Redundancy
+ul
+  li It does not improve the performance of queries.
+  li
+    | Redundancy is said to be uncontrolled redundancy, when storing the data at multiple times will not ensure consistency of data.
+  li Data access or retrieval speed is slow
 
