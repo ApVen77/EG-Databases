@@ -1,13 +1,17 @@
+
 {
   "name": "EG-Databases",
   "version": "1.0.0",
-  "description": "",
+  "description": "An Group Project",
   "main": "app.js",
+  "engines": {
+    "npm": "6.x"
+  },
+
+
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node index.js",
-      "build": "ng build",
-      "heroku-postbuild": "ng build --prod" // this will be run on Heroku
+    "test": "echo \"Error: no test specified\" && exit 1"
     
   },
   "repository": {
