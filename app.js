@@ -31,7 +31,7 @@ app.get('/', function(req, res){
 
 
 app.get('/chap1', function(req, res) {
-	res.render('chapter-1'); 
+	res.render('chapter-1.jade'); 
 });
 
 
