@@ -24,19 +24,17 @@ app.set('view engine', 'jade');
 //Routes 
 
 
-// var expressJade = require('../');
-// var serveStatic = require('serve-static');
 
  
 // app.use(serveStatic(path.join(__dirname)));
  
-if (process.env.NODE_ENV !== 'production') {
-  var viewsDir = path.join(__dirname, 'views');
-  var namespace = 'jade';
-  app.get('/js/templates/*', expressJade(viewsDir, namespace));
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   var viewsDir = path.join(__dirname, 'views');
+//   var namespace = 'jade';
+//   app.get('/js/templates/*', expressJade(viewsDir, namespace));
+// }
  
-app.listen(3000);
+// app.listen(3000);
 
 
 
@@ -52,10 +50,9 @@ app.get('/chap1', function(req, res) {
 	res.render('chapter-1'); 
 });
 
-
-
-
-
+app.get("/chap2", function (req, res) {
+	res.render("chapter-2"); 
+})
 
 
 
