@@ -15,13 +15,29 @@ app.set('view engine', 'jade');
 
 
 //to make POST request 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-// to use css from public folder
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended: false}));
+// // to use css from public folder
+// app.use(express.static(path.join(__dirname, 'public')));
 
 
 //Routes 
+
+
+
+ 
+// app.use(serveStatic(path.join(__dirname)));
+ 
+// if (process.env.NODE_ENV !== 'production') {
+//   var viewsDir = path.join(__dirname, 'views');
+//   var namespace = 'jade';
+//   app.get('/js/templates/*', expressJade(viewsDir, namespace));
+// }
+ 
+// app.listen(3000);
+
+
+
 //for jade(html) files in the views folder
 //res.render Used in Express to view and send HTML to the client 
 
@@ -34,10 +50,9 @@ app.get('/chap1', function(req, res) {
 	res.render('chapter-1.jade'); 
 });
 
-
-
-
-
+app.get("/chap2", function (req, res) {
+	res.render("chapter-2"); 
+})
 
 
 
