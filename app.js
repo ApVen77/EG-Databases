@@ -54,6 +54,14 @@ app.get("/chap2", function (req, res) {
 	res.render("chapter-2"); 
 })
 
+app.get("/chap3", function (req, res) {
+	res.render("chapter-3"); 
+})
+
+app.get("/chap4", function (req, res) {
+	res.render("chapter-4"); 
+})
+
 
 
 // Start server to listen for request
