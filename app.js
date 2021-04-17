@@ -15,29 +15,26 @@ app.set('view engine', 'jade');
 
 
 //to make POST request 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-// to use css from public folder
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended: false}));
+// // to use css from public folder
+// app.use(express.static(path.join(__dirname, 'public')));
 
 
 //Routes 
 
-var express = require('express');
-var expressJade = require('../');
-var serveStatic = require('serve-static');
-var path = require('path');
-var app = express();
+
+
  
-app.use(serveStatic(path.join(__dirname)));
+// app.use(serveStatic(path.join(__dirname)));
  
-if (process.env.NODE_ENV !== 'production') {
-  var viewsDir = path.join(__dirname, 'views');
-  var namespace = 'jade';
-  app.get('/js/templates/*', expressJade(viewsDir, namespace));
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   var viewsDir = path.join(__dirname, 'views');
+//   var namespace = 'jade';
+//   app.get('/js/templates/*', expressJade(viewsDir, namespace));
+// }
  
-app.listen(3000);
+// app.listen(3000);
 
 
 
@@ -50,13 +47,12 @@ app.get('/', function(req, res){
 
 
 app.get('/chap1', function(req, res) {
-	res.render('chapter-1'); 
+	res.render('chapter-1.jade'); 
 });
 
-
-
-
-
+app.get("/chap2", function (req, res) {
+	res.render("chapter-2"); 
+})
 
 
 
