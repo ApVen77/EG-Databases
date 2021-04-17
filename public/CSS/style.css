@@ -1,8 +1,27 @@
 
 body {
+<<<<<<< HEAD
     background-color: aqua;
 }
 
 h1 {
     color: red;
+=======
+    background-image:url("https://previews.123rf.com/images/mangpor2004/mangpor20041704/mangpor2004170400103/77112963-blurred-background-blur-store-with-bokeh-light-background.jpg");
+    background-size:cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 15px;
+}
+h2, h3{
+    text-align: center;
+}
+img{
+    float: right;
+    margin: 10px 10px;
+}
+.Marv{
+    border: solid 3px red;
+>>>>>>> 239b3cc659684a8f4645787925de44fc19dddab8
 }
